@@ -1,5 +1,5 @@
 {% set name = "evaluate" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/evaluate-{{ version }}.tar.gz
-  sha256: 4c3652306064bcf7bf87d548f244d0404d6b7a67bae76b6dc2f9f55402f26052
+  sha256: bd6a59879be9ae13b681684e56ae3e6ea657073c4413b30335e9efa9856e4f44
 
 build:
   noarch: python
