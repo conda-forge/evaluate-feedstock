@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/evaluate-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/evaluate-{{ version }}.tar.gz
   sha256: d721d9f2059ced79770d8a0509e954fbd1bbac96a8f9160e29888d8073cda3d9
 
 build:
@@ -14,14 +14,14 @@ build:
   entry_points:
     - evaluate-cli=evaluate.commands.evaluate_cli:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - datasets >=2.0.0
     - numpy >=1.17
     - dill
@@ -45,6 +45,7 @@ test:
     - evaluate-cli --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/huggingface/evaluate
