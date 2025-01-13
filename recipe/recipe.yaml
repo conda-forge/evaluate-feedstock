@@ -38,7 +38,7 @@ requirements:
     - packaging
     # template deps
     - cookiecutter
-    - gradio>=3.0.0
+    - gradio >=3.0.0
     # evaluator deps
     - transformers
     - scipy >=1.7.1
