@@ -4,7 +4,7 @@
 
 [project]
 name = "evaluate-feedstock"
-version = "3.45.1"
+version = "3.45.3"
 description = "Pixi configuration for conda-forge/evaluate-feedstock"
 authors = ["@conda-forge/evaluate"]
 channels = ["conda-forge"]
