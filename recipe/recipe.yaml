@@ -1,6 +1,6 @@
 context:
   name: evaluate
-  version: 0.4.2
+  version: "0.4.3"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/evaluate-${{ version }}.tar.gz
-  sha256: 851ab767df8ec4031366c512eb88d8174adfba65d2c8c4c9bfdfe9c702212234
+  sha256: 3a5700cf83aabee9549264e1e5666f116367c61dbd4d38352015e859a5e2098d
 
 build:
   number: 0

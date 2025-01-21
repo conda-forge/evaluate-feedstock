@@ -146,6 +146,3 @@ Feedstock Maintainers
 * [@hadim](https://github.com/hadim/)
 * [@wietsedv](https://github.com/wietsedv/)
 
-
-<!-- dummy commit to enable rerendering -->
-
